@@ -1,0 +1,26 @@
+import math
+def program():
+    judul = "PROGRAM MEMBANDINGKAN 3 BOLA"
+    print(judul.center(70, '-'))
+    bola1 = float(input("Masukkan jari-jari bola 1:"))
+    v1 = (4/3) * (3.14) * (bola1**3)
+    lp1 = (4) * (3.14) * (bola1 ** 2)
+    print("Luas permukaan pertama adalah", math.floor(lp1), "satuan")
+    print("Volume pertama adalah", math.ceil(v1), "satuan")
+    bola2 = float(input("Masukkan jari-jari bola 2:"))
+    v2 = (4/3) * (3.14) * (bola2**3)
+    lp2 = (4) * (3.14) * (bola2 ** 2)
+    print("Luas permukaan kedua adalah", math.floor(lp2), "satuan")
+    print("Volume kedua adalah", math.ceil(v2), "satuan")
+    bola3 = float(input("Masukkan jari-jari bola 3:"))
+    v3 = (4/3) * (3.14) * (bola3**3)
+    lp3 = (4) * (3.14) * (bola3 ** 2)
+    print("Luas permukaan ketiga adalah", math.floor(lp3), "satuan")
+    print("Volume ketiga adalah", math.ceil(v3), "satuan")
+
+    print("----- PERBANDINGAN -----")
+    print("Luas permukaan bola terbesar:", max(lp1, lp2, lp3))
+    print("Luas permukaan bola terkecil:", min(lp1, lp2, lp3))
+    print("Volume bola terbesar:", max(v1,v2,v3))
+    print("Volume bola terkecil:", min(v1,v2,v3))
+program()
